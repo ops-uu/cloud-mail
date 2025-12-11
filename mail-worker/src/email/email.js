@@ -163,7 +163,7 @@ ${params.text || emailUtils.htmlToText(params.content) || ''}
 		                        const sendForm = {
 		                            from: `"${email.from.address}" <${account.email}>`,
 		                            to: [forwardAddr],  // 每次发送给一个收件人
-		                            subject: `${email.subject} (From By ${email.from.address} To ${forwardAddr})`,
+		                            subject: `${email.subject} (From By ${email.from.address} To ${forwardAddr})`, // Update
 		                            text: email.text,
 		                            html: email.html,
 		                            attachments: email.attachments,
