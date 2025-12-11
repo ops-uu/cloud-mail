@@ -1,0 +1,129 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#app {
+    width: 100%;
+    height: 100%;
+}
+
+@font-face {
+    font-family: 'HarmonyOS';
+    src: url('@/assets/fonts/HarmonyOS_Sans_SC_Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:deep(.el-input__inner:focus) {
+    background-color: transparent !important;
+    border-color: #dcdfe6 !important;
+}
+
+body {
+    font-family: 'HarmonyOS', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', sans-serif;
+    line-height: 1.5;
+    color: #333;
+    background-color: #fff;
+    font-size: 14px;
+}
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    outline: none;
+    border: none;
+    background: none;
+}
+
+*:focus {
+    outline: none;
+}
+
+.tox .tox-dialog--width-lg {
+    height: 850px !important;
+    @media (max-width: 1024px) {
+        height: calc(100% - 40px) !important;
+    }
+}
+
+.tox .tox-dialog__body-content {
+    overflow: initial !important;
+    max-height: min(850px, calc(100vh - 110px)) !important;
+    @media (max-width: 1024px) {
+        box-sizing: initial !important;
+        max-height: min(850px, calc(100% - 40px)) !important;
+    }
+}
+
+.tox-dialog__body-content {
+    height: auto !important;
+    flex-basis: auto !important;
+}
+
+.tox .tox-collection--grid .tox-collection__group {
+    max-height: 220px !important;
+}
+
+:root {
+    --el-color-primary: #1890ff;
+    --el-color-primary-dark-2: #1064c0;
+    --el-color-primary-light-3: #4dabff;
+    --el-color-primary-light-5: #69c0ff;
+    --el-color-primary-light-7: #91d5ff;
+    --el-color-primary-light-9: #e6f7ff;
+    --el-text-color-regular: #333;
+}
+
+.message-bottom {
+    top: auto !important;
+    bottom: 20px !important;
+    .el-icon {
+        display: none !important;
+    }
+}
+
+@media (pointer: fine) and (hover: hover) {
+    /* 整个滚动条 */
+    ::-webkit-scrollbar {
+        width: 6px; /* 垂直滚动条宽度 */
+        height: 6px; /* 水平滚动条高度 */
+    }
+
+    /* 滚动条轨道 */
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 10px;
+    }
+
+    /* 滚动条滑块 */
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+}
